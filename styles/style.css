@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+    /**** MENU PRINCIPAL ****/
+}
+
+header {
+    background-color: #000000;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    
+    
+
+}
+
+.logo {
+    width: 65px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    
+}
+
+.menu__item a {
+    color: #efb810;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    
+    
+}
+
+.menu__item.active a {
+    text-decoration: underline double;
+}
+
+.imagenPrincipal {
+    height: 80vh;
+    background-image: url("../img/aver3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+.imagenPrincipal2 {
+    height: 90vh;
+    background-image: url("../img/aver2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+.imagenPrincipal3 {
+    height: 90vh;
+    background-image: url("../img/aver1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+.imagenPrincipal4 {
+    height: 90vh;
+    background-image: url("../img/aver4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 150px;
+}
+
+.imagenPrincipal5 {
+    height: 90vh;
+    background-image: url("../img/aver5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+
+
+.imagenPrincipal h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 4px 4px 0 #efb810;
+    
+}
+
+.imagenPrincipal p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 1.rem;
+    text-shadow: 1px 1px 0 #474747;
+}
+
+
+
+/**** TARJETAS ****/
+
+.tarjetitas, .tarjetas {
+    display: flex;
+    gap: 30px;
+    padding: 60px;
+}
+
+.tarjetita, .tarjeta {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(71, 73, 71);
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.tarjetita img, .tarjeta img {
+    max-width: 100%;
+}
+
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.descripcion{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    text-align: left
+}
+
+.tarjetita__boton{
+    font-family: 'Lato', cursive;
+    font-size: 0.8rem;
+    background-color: #efb810;
+    padding: 0.25rem 1rem;
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+/**** TRANSFORMACIONES ****/
+
+.tarjetita {
+    transition: all .3s;
+}
+
+.tarjetita:hover {
+    transform: scale(1.1) translateY(-40px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+/**** FOOTER ****/
+.pie {
+    background-color: #0a0a0a;
+    color: rgb(255, 250, 250);
+    padding-block: 10px;
+    text-align: center;
+    display: flex;
+    justify-content:left
+    
+
+}
+
+
+/**** EMAIL DE CONSULTA ****/
+
+.reservation {
+    padding: 6rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    
+}
+
+.reservation__heading {
+    text-align: center;
+}
+
+
+.reservation__heading h4 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    
+}
+
+.reservation__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "name   email"
+        "people button";
+    width: 36rem;
+    gap: 1rem;
+}
+
+.reservation__form input {
+    padding: .75rem 1rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+    color: black;
+}
+
+.reservation__form .name {
+    grid-area: name;
+}
+
+.reservation__form .email {
+    grid-area: email;
+}
+
+
+.reservation__form .people {
+    grid-area: people;
+}
+
+
+.reservation__form .button {
+    grid-area: button;
+    border: 0;
+    background-color: #0a0a0a;
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/**** NOSOTROS ****/
+.sobre-nosotros {
+    max-width: 80%;
+    margin:auto;
+    padding-top:5rem ;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 1.rem;
+    text-shadow: 1px 1px 0 #474747;
+    
+  }
+  
+ 
+  
