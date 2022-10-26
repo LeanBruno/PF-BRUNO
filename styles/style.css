@@ -289,6 +289,43 @@ header {
 
 }
 
+/**** ABOGADOS ****/
+
+.intro-abogados {
+    max-width: 80%;
+    margin:auto;
+    padding-top:5rem ;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-size: 1.rem;
+    text-shadow: 1px 1px 0 #474747;
+    
+}
+
+.sobre-abogados {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-direction: column;
+}
+
+.flex-abogados {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.imagen-abogados {
+    width: 250px;
+    animation: firstAnimation 5s ease-in 0s 1 normal forwards;
+}
+
+
 /***** MEDIA 500 *****/
 @media screen and (max-width: 500px) {
 
