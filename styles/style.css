@@ -8,7 +8,6 @@
 
 /**** MENU PRINCIPAL ****/
 
-
 .logo {
     height: 65px;
 }
@@ -16,7 +15,6 @@
 .navbar {
     background-color: rgb(33, 29, 29);
 }
-
 
 .navbar .nav-item .nav-link {
     color: #fdfcfa;
@@ -74,8 +72,6 @@
     background-image: url("../img/aver5.jpg");
 }
 
-
-
 .imagenPrincipal h2 {
     font-family: 'Alfa Slab One', cursive;
     font-size: 3rem;
@@ -91,8 +87,6 @@
     font-size: 100%;
     text-shadow: 1px 1px 0 #454444;
 }
-
-
 
 /**** TARJETAS ****/
 
@@ -156,7 +150,6 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-
 /**** FOOTER ****/
 footer {
     width: 100%;
@@ -171,9 +164,26 @@ footer {
     align-items: center;
 }
 
-.socialButtons {
+.contacto__redes a{
     display: inline-flex;
-    gap: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #212529;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+    margin: 10px;
+}
+.contacto__redes a:hover{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
+    background-color: #fab012;
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #212529;
 }
 
 .mainContent {
@@ -181,7 +191,6 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-
 
 .textSection {
     display: flex;
@@ -210,7 +219,6 @@ footer {
     color: #efb810;
 }
 
-
 /**** EMAIL DE CONSULTA ****/
 
 .reservation {
@@ -226,7 +234,6 @@ footer {
 .reservation__heading {
     text-align: center;
 }
-
 
 .reservation__heading h4 {
     font-family: 'Alfa Slab One', cursive;
@@ -261,11 +268,9 @@ footer {
     grid-area: email;
 }
 
-
 .reservation__form .people {
     grid-area: people;
 }
-
 
 .reservation__form .button {
     grid-area: button;
@@ -279,6 +284,7 @@ footer {
 }
 
 /**** NOSOTROS ****/
+
 .sobre-nosotros {
     max-width: 80%;
     margin:auto;
