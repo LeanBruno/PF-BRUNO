@@ -148,12 +148,13 @@ footer {
   border-radius: 50%;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
   margin: 10px; }
-  .contacto__redes a .contacto__redes a:hover {
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
-    background-color: #fab012;
-    transform: scale(1.1);
-    transition: 0.5s;
-    color: #212529; }
+
+.contacto__redes a:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #fab012;
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: #212529; }
 
 .mainContent {
   display: flex;
@@ -168,9 +169,10 @@ footer {
 
 .footerLine {
   width: 100%; }
-  .footerLine .footerText {
-    font-size: 15px;
-    color: white; }
+
+.footerText {
+  font-size: 15px;
+  color: white; }
 
 /**** EMAIL DE CONSULTA ****/
 .reservation {
