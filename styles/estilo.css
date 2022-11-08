@@ -35,12 +35,13 @@
   position: relative;
   isolation: isolate;
   padding-inline: 150px; }
-  .imagenPortada .imagenPortada::before {
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    inset: 0; }
+
+.imagenPortada::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  inset: 0; }
 
 .imagenPrincipal {
   background-image: url("../img/aver3.jpg");
@@ -194,14 +195,15 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "name   email" "people button";
+  grid-template-areas: "name   email"
+ "people button";
   gap: 1rem; }
 
 .reservation__form input {
   padding: .75rem 1rem;
   font-family: 'Bebas Neue', cursive;
   font-weight: 300;
-  color: black;
+  color: #211d1d;
   width: 15rem;
   max-width: 100%; }
 
@@ -312,7 +314,10 @@ footer {
     padding-inline: 0px; }
   .reservation__form {
     grid-template-columns: 1fr;
-    grid-template-areas: "name" "email" "people" "button"; } }
+    grid-template-areas: "name"
+ "email"
+ "people"
+ "button"; } }
 
 /**** MEDIA 375 ****/
 @media screen and (max-width: 375px) {
