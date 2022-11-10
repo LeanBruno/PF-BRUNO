@@ -1,9 +1,26 @@
+@media screen and (max-width: 900px){
+	.sobre-abogados{
+		flex-direction: column;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.imagenPortada {
 		padding-inline: 50px;
 	}
 	.tarjetitas {
 		flex-direction: column;
+	}
+}
+@media screen and (max-width: 630px) {
+	.mainContent {
+		display: block;
+		margin-left: 3%;
+	}
+	.textSection {
+		display: block;
+		margin-left: 3%;
+		text-align: center;
 	}
 }
 @media screen and (max-width: 500px) {
@@ -27,10 +44,5 @@
 			font-size: 2rem;
 		}
 	}
-	.socialContainer {
-		display: block;
-		flex-direction: column;
-		align-items: center;
-	}
-	
 }
+
