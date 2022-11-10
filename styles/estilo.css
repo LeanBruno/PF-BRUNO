@@ -7,21 +7,22 @@
     background-color: black;
     color: #efb810; }
 
+/**** MENU PRINCIPAL ****/
 .logo {
   height: 65px; }
 
 .navbar {
   background-color: #211d1d; }
-
-.navbar .nav-item .nav-link {
-  color: #fdfcfa;
-  text-decoration: none;
-  font-family: 'Bebas Neue', cursive; }
-
-.navbar .nav-item .nav-link.active,
-.navbar .nav-item .nav-link:hover {
-  color: #efb810;
-  text-decoration: underline double; }
+  .navbar .nav-item .nav-link {
+    color: #fdfcfa;
+    text-decoration: none;
+    font-family: "Bebas Neue", cursive; }
+    .navbar .nav-item .nav-link:hover {
+      color: #efb810;
+      text-decoration: underline double; }
+  .navbar .nav-item .nav-link.active {
+    color: #efb810;
+    text-decoration: underline double; }
 
 .imagenPortada {
   min-height: 90vh;
@@ -35,13 +36,12 @@
   position: relative;
   isolation: isolate;
   padding-inline: 150px; }
-
-.imagenPortada::before {
-  content: '';
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  inset: 0; }
+  .imagenPortada::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    inset: 0; }
 
 .imagenPrincipal {
   background-image: url("../img/aver3.jpg");
@@ -59,66 +59,69 @@
     font-family: "Lato", cursive;
     font-size: 100%;
     text-shadow: 1px 1px 0 #454444; }
-  .imagenPrincipal .imagenPrincipal2 {
-    background-image: url("../img/aver2.jpg"); }
-  .imagenPrincipal .imagenPrincipal3 {
-    background-image: url("../img/aver1.jpg"); }
-  .imagenPrincipal .imagenPrincipal4 {
-    background-image: url("../img/aver4.jpg"); }
-  .imagenPrincipal .imagenPrincipal5 {
-    background-image: url("../img/aver5.jpg"); }
+
+.imagenPrincipal2 {
+  background-image: url("../img/aver2.jpg"); }
+
+.imagenPrincipal3 {
+  background-image: url("../img/aver1.jpg"); }
+
+.imagenPrincipal4 {
+  background-image: url("../img/aver4.jpg"); }
+
+.imagenPrincipal5 {
+  background-image: url("../img/aver5.jpg"); }
 
 /**** TARJETAS ****/
 .tarjetitas, .tarjetas {
   display: flex;
   gap: 30px;
   padding: 60px; }
-
-.tarjetita, .tarjeta {
+  .tarjetitas .tarjetita, .tarjetas .tarjetita {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #211d1d;
+    align-items: center; }
+    .tarjetitas .tarjetita img, .tarjetas .tarjetita img {
+      max-width: 100%; }
+    .tarjetitas .tarjetita .info, .tarjetas .tarjetita .info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem; }
+    .tarjetitas .tarjetita .titulo, .tarjetas .tarjetita .titulo {
+      font-family: "Bebas Neue", cursive;
+      font-weight: 200;
+      font-size: 1.6rem;
+      color: white; }
+    .tarjetitas .tarjetita .descripcion, .tarjetas .tarjetita .descripcion {
+      font-family: 'Lato', sans-serif;
+      width: 100%;
+      text-align: left;
+      color: white; }
+    .tarjetitas .tarjetita .tarjetita__boton, .tarjetas .tarjetita .tarjetita__boton {
+      font-family: "Lato", cursive;
+      font-size: 0.8rem;
+      background-color: #efb810;
+      padding: 0.5rem 1rem;
+      color: #0a0a0a;
+      text-decoration: none;
+      border: 0; }
+    .tarjetitas .tarjetita:hover, .tarjetas .tarjetita:hover {
+      transition: all .3s;
+      transform: scale(1.05) translateY(-10px);
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+.tarjeta {
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
   background-color: #211d1d;
   align-items: center; }
+  .tarjeta img {
+    max-width: 100%; }
 
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem; }
-
-.tarjetita img, .tarjeta img {
-  max-width: 100%; }
-
-.titulo {
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 200;
-  font-size: 1.6rem;
-  color: white; }
-
-.descripcion {
-  font-family: 'Lato', sans-serif;
-  width: 100%;
-  text-align: left;
-  color: white; }
-
-.tarjetita__boton {
-  font-family: 'Lato', cursive;
-  font-size: 0.8rem;
-  background-color: #efb810;
-  padding: 0.5rem 1rem;
-  color: #0a0a0a;
-  text-decoration: none;
-  border: 0; }
-
-/**** TARJETITA TRANSFORMACIONES ****/
-.tarjetita {
-  transition: all .3s; }
-
-.tarjetita:hover {
-  transform: scale(1.05) translateY(-10px);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-
+/**** FOOTER ****/
 footer {
   width: 100%;
   padding: 20px 0;
@@ -129,12 +132,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .socialContainer .socialText {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #efb810; }
 
 .contacto__redes a {
   display: inline-flex;
@@ -149,33 +146,39 @@ footer {
   border-radius: 50%;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
   margin: 10px; }
+  .contacto__redes a:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+    background-color: #fab012;
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: #212529; }
 
-.contacto__redes a:hover {
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
-  background-color: #fab012;
-  transform: scale(1.1);
-  transition: 0.5s;
-  color: #212529; }
-
-.mainContent {
+.mainContent, .textSection {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  .mainContent .textSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .mainContent .textSection .logoFooter {
-      width: 275px; }
 
-.footerLine {
-  width: 100%; }
+.textSection {
+  flex-direction: column; }
 
 .footerText {
   font-size: 15px;
   color: white; }
 
-/**** EMAIL DE CONSULTA ****/
+.footerLine {
+  width: 100%; }
+
+.logoFooter {
+  width: 275px; }
+
+.socialText {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #efb810; }
+
+/**** EMAIL DE CONSULTA ****/  
 .reservation {
   padding: 3rem;
   display: flex;
@@ -186,45 +189,38 @@ footer {
 
 .reservation__heading {
   text-align: center; }
-
-.reservation__heading h4 {
-  font-family: 'Alfa Slab One', cursive;
-  font-size: 2rem; }
+  .reservation__heading h4 {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 2rem; }
 
 .reservation__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "name   email"
- "people button";
+  grid-template-areas: "name   email" "people button";
   gap: 1rem; }
-
-.reservation__form input {
-  padding: .75rem 1rem;
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 300;
-  color: #211d1d;
-  width: 15rem;
-  max-width: 100%; }
-
-.reservation__form .name {
-  grid-area: name; }
-
-.reservation__form .email {
-  grid-area: email; }
-
-.reservation__form .people {
-  grid-area: people; }
-
-.reservation__form .button {
-  grid-area: button;
-  border: 0;
-  background-color: #0a0a0a;
-  font-family: 'Alfa Slab One', cursive;
-  text-transform: uppercase;
-  color: white;
-  border-radius: 2px;
-  cursor: pointer; }
+  .reservation__form input {
+    padding: .75rem 1rem;
+    font-family: "Bebas Neue", cursive;
+    font-weight: 300;
+    color: black;
+    width: 15rem;
+    max-width: 100%; }
+  .reservation__form .name {
+    grid-area: name; }
+  .reservation__form .email {
+    grid-area: email; }
+  .reservation__form .people {
+    grid-area: people; }
+  .reservation__form .button {
+    grid-area: button;
+    border: 0;
+    background-color: #0a0a0a;
+    font-family: "Alfa Slab One", cursive;
+    text-transform: uppercase;
+    color: #efb810;
+    border-radius: 2px;
+    cursor: pointer; }
 
 /**** NOSOTROS ****/
 .sobre-nosotros {
@@ -236,23 +232,21 @@ footer {
   padding-right: 2rem;
   text-align: center;
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 200;
   font-size: 1rem;
   text-shadow: 1px 1px 0 #474747; }
+  .sobre-nosotros p {
+    font-family: 'Lato', sans-serif;
+    text-shadow: none; }
 
-.sobre-nosotros p {
-  font-family: 'Lato', sans-serif;
-  text-shadow: none; }
-
-/**** ABOGADOS ****/
 .intro-abogados {
   max-width: 80%;
   margin: auto;
   padding: 2rem;
   text-align: center;
   color: white;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-weight: 200;
   font-size: 1rem;
   text-shadow: 1px 1px 0 #474747; }
@@ -290,11 +284,10 @@ footer {
 /**** SERVICIOS ****/
 .main-servicios {
   background-color: black; }
-
-.main-servicios h2 {
-  margin-bottom: 1rem;
-  font-size: 2.4rem;
-  color: white; }
+  .main-servicios h2 {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    color: white; }
 
 .cartaServicios {
   background-color: #363636;
@@ -305,21 +298,26 @@ footer {
 @media screen and (max-width: 768px) {
   .imagenPortada {
     padding-inline: 50px; }
-  .tarjetitas {
+  .tarjetitas, .tarjetas {
     flex-direction: column; } }
-
-/***** MEDIA 500 ****/
+    
+/**** MEDIA 500 ****/
 @media screen and (max-width: 500px) {
   .imagenPortada {
     padding-inline: 0px; }
   .reservation__form {
     grid-template-columns: 1fr;
-    grid-template-areas: "name"
- "email"
- "people"
- "button"; } }
+    grid-template-areas: "name" "email" "people" "button"; }
+  .socialContainer {
+    display: block;
+    flex-direction: column;
+    align-items: center; } }
 
 /**** MEDIA 375 ****/
 @media screen and (max-width: 375px) {
   .imagenPrincipal h2 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .socialContainer {
+    display: block;
+    flex-direction: column;
+    align-items: center; } }

@@ -1,0 +1,49 @@
+.reservation {
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+	background-repeat: no-repeat;
+}
+.reservation__heading {
+	text-align: center;
+	h4 {
+		font-family: $FontAlfa;
+		font-size: 2rem;
+	}
+}
+.reservation__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "name   email" "people button";
+	gap: 1rem;
+	input {
+		padding: .75rem 1rem;
+		font-family: $FontBebas;
+		font-weight: 300;
+		color: black;
+		width: 15rem;
+		max-width: 100%;
+	}
+	.name {
+		grid-area: name;
+	}
+	.email {
+		grid-area: email;
+	}
+	.people {
+		grid-area: people;
+	}
+	.button {
+		grid-area: button;
+		border: 0;
+		background-color: #0a0a0a;
+		font-family: $FontAlfa;
+		text-transform: uppercase;
+		color: $colorprincipal;
+		border-radius: 2px;
+		cursor: pointer;
+	}
+}

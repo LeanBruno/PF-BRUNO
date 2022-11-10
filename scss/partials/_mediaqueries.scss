@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+	.imagenPortada {
+		padding-inline: 50px;
+	}
+	.tarjetitas {
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 500px) {
+	.imagenPortada {
+		padding-inline: 0px;
+	}
+	.reservation__form {
+		grid-template-columns: 1fr;
+		grid-template-areas: "name" "email" "people" "button";
+	}
+	.socialContainer {
+		display: block;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.imagenPrincipal {
+		h2 {
+			font-size: 2rem;
+		}
+	}
+	.socialContainer {
+		display: block;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+}

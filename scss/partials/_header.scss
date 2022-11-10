@@ -1,0 +1,21 @@
+.logo {
+	height: 65px;
+}
+.navbar {
+	background-color: $colorsecundario;
+	.nav-item {
+		.nav-link {
+			color: #fdfcfa;
+			text-decoration: none;
+			font-family: $FontBebas;
+			&:hover {
+				color: $colorprincipal;
+				text-decoration: underline double;
+			}
+		}
+		.nav-link.active {
+			color: $colorprincipal;
+			text-decoration: underline double;
+		}
+	}
+}

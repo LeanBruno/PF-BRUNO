@@ -1,0 +1,18 @@
+.sobre-nosotros {
+	max-width: 80%;
+	margin: auto;
+	padding-top: 5rem;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-family: $FontBebas;
+	font-weight: 200;
+	font-size: 1rem;
+	text-shadow: 1px 1px 0 #474747;
+	p {
+		font-family: 'Lato', sans-serif;
+		text-shadow: none;
+	}
+}
