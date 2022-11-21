@@ -270,47 +270,88 @@ footer {
   font-size: 1rem;
   text-shadow: 1px 1px 0 #474747; }
 
-.sobre-abogados {
-  display: flex;
-  padding-block: 3rem;
-  gap: 2rem; }
+.team-member {
+  background-color: #17181e; }
 
-.flex-abogados {
-  display: flex;
-  padding-bottom: 100px;
-  flex-direction: column; }
+.team-member.even {
+  background-color: #36393f; }
 
-.imagen-abogados {
-  animation: firstAnimation 5s ease-in 0s 1 normal forwards;
+.team-member .hline {
+  width: 90px;
+  height: 2px;
+  margin: 16px auto;
+  background-color: #fab012; }
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+  transition: all 0.4s ease;
+  width: 100%; }
+
+.team-member .team-member-img {
+  position: relative;
+  overflow: hidden; }
+
+.team-member .team-member-img .social-icons {
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: top;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  height: 45px;
+  background-color: #17181e;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.abogadoNombre {
-  font-size: 1.6rem;
-  background-color: black;
-  color: white;
-  padding: 1rem;
-  line-height: 1;
-  margin: 0; }
+.team-member .team-member-img .social-icons a {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  color: #fff;
+  border-radius: 100px;
+  margin-left: 4px;
+  margin-right: 4px; }
 
-.aboutFirstText {
-  padding: 1rem;
-  background-color: #ececec; }
+.team-member .team-member-img .social-icons a:hover {
+  background-color: #fab012;
+  color: #fff; }
 
-.main-servicios {
-  background-color: black; }
-  .main-servicios h2 {
-    margin-bottom: 1rem;
-    font-size: 2.4rem;
-    color: white; }
+.team-member:hover .team-member-img .social-icons {
+  bottom: 0; }
 
-.cartaServicios {
-  background-color: #363636;
-  padding: 2rem;
-  color: white; }
+.team-member:hover img {
+  transform: translateY(-10px); }
+
+.section-intro {
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 30px; }
+
+.section-intro .hline {
+  width: 120px;
+  height: 2px;
+  background-color: #efb810;
+  margin: 16px auto 0 auto; }
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #efb810;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex: none; }
+
+.feature .icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: 100px;
+  font-size: 22px; }
 
 @media screen and (max-width: 900px) {
   .sobre-abogados {
