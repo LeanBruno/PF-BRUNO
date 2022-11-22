@@ -1,11 +1,42 @@
-# PreEntrega-2-Leandro-Bruno
-🖖🏼Hola Mi nombre es Leandro Bruno
-Bienvenido a mi proyecto de CoderHouse! 😎💻
-Este proyecto demuestra mis habilidades como desarrollador web 👩‍💻🚀 
-Actualmente utilizo las siguientes tecnologías:
+<h1 align="center"> ¡Bienvenido a mi proyecto de Desarrollo Web! 👩‍💻🚀 </h1>
 
-HTML: Manejo de etiquetas, saltos de página, estructura y maquetado.
-CSS y Bootsrap: estilos, clases, flexbox, grids, responsive y animaciones.
-Git: Uso de github, armado de repositorio, manejo de ramas e implementación en github-pages.
-Nota: El proyecto no está finalizado. Faltan cosas por agregar y terminar en la web.
-En la siguiente URL podras ver el resultado al momento:👉🏼 https://github.com/LeanBruno/PreEntrega-2-Leandro-Bruno
+_Conocimientos adquiridos y posteriormente aplicados:_
+
+###### HTML
+
+- Estructura final de la web.
+- Maquetado con código prolijo y limpio.
+- Manejo de etiquetas semánticas.
+
+###### SCSS
+
+- Estilo final de la web.
+- Todo el estilo se transformó a SCSS.
+- Se utilizó nesting y selector &.
+- Uso de variables, extend, imports, mixings, maps, etc.
+
+###### GITHUB
+
+- Manejo de ramas al incorporar SASS (se utilizó una rama distinta para ir versionando el proyecto con el uso de commits, para luego mergearlo a la rama main)
+- Uso de .gitignore para evitar los archivos node\*modules.
+
+###### RESPONSIVE
+
+- Uso de grids, flexbox y box-modeling.
+- Se utilizó la herramienta de Bootstrap 
+
+###### NODE MODULES
+
+- Uso de metadatos con nombre y descripción.
+- Se inicializó y se agregaron las dependencias nodemon y node-sass.
+
+###### TÉCNICAS SEO
+
+**Se implementó meta tags como:**
+
+- Descripción 
+- Keywords.
+- Favicon.
+- Alts en cada una de las imágenes utilizadas.
+
+Link a GitHub Pages para ver la página 👉🏻 [SCOCCIA ABOGADOS] https://leanbruno.github.io/PF-BRUNO/
