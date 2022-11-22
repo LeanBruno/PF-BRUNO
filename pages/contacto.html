@@ -49,25 +49,81 @@
   </header>
 
         <!--IMAGEN DE FONDO + TITULO-->
+
         <main>
             <section class="imagenPortada imagenPrincipal5">
               <section class="intro-abogados">
-              <h1>CONTACTATE CON NUESTRO ESTUDIO</h1>
+              <h1>COMUNICATE CON NOSOTROS</h1>
             </section>
         </main>
 
         <!--CONTACTO MAIL-->
-    <section class="reservation">
-        <div class="reservation__heading">
-            <h4>ENVIAR MAIL DE CONSULTA</h4>
-        </div>
-        <form class="reservation__form">
-            <input class="name" type="text" placeholder="Nombre y Apellido" name="name">
-            <input class="email" type="email" placeholder="Email" name="email">
-            <input class="people" type="subjet" placeholder="Comentarios" name="comentarios">
-            <input class="button" type="button" value="Enviar">
-        </form>
-    </section>
+
+        <section class="contact-page-section">
+            <div class="container">
+                <div class="sec-title">
+                    <div class="title">Envianos tu consulta</div>
+                      <h2>COMPLETÁ LOS SIGUIENTES DATOS</h2>
+                  </div>
+                  <div class="inner-container">
+                    <div class="row clearfix">
+                      
+                        <!--COLUM CONTACT-->
+                          <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                            <div class="inner-column">
+                                
+                                  <!--FORM CONTACT-->
+                                  <div class="contact-form">
+                                      <form method="post" action="sendemail.php" id="contact-form">
+                                          <div class="row clearfix">
+                                              <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                                  <input type="text" name="nombre" value="" placeholder="Nombre y Apellido" required>
+                                              </div>
+                                              <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                                  <input type="email" name="email" value="" placeholder="Email" required>
+                                              </div>
+                                              <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                                  <input type="text" name="asunto" value="" placeholder="Asunto" required>
+                                              </div>
+                                              <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                                  <input type="text" name="teléfono" value="" placeholder="Teléfono" required>
+                                              </div>
+                                              <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                                  <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+                                              </div>
+                                              <div class="form-group col-md-12 col-sm-12 co-xs-12 text-center">
+                                                  <button type="submit" class="theme-btn btn-style-one">Enviar</button>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                          
+                          <!--INFO CONTACT-->
+                          <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                            <div class="inner-column">
+                                <h2>CONTACTO</h2>
+                                  <ul class="list-info">
+                                    <li><i class="bi bi-geo-alt"></i>Avenida Corrientes 676</li>
+                                      <li><i class="bi bi-envelope"></i>info@scocciaabogados.com</li>
+                                      <li><i class="bi bi-telephone"></i>4321-2020 <br> 0800-222-2020 int. 110</li>
+                                  </ul>
+                                  <ul class="social-icon-four">
+                                      <li class="follow">Encontranos en: </li>
+                                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                      <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </section>
 
     <!--FOOTER-->
 
