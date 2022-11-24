@@ -16,7 +16,7 @@
 		width: 90px;
 		height: 2px;
 		margin: 16px auto;
-		background-color: #fab012;
+		background-color: $colorterciario;
 	}
 	.team-member-img {
 		img {
@@ -47,7 +47,7 @@
 				margin-left: 4px;
 				margin-right: 4px;
 				&:hover {
-					background-color: #fab012;
+					background-color: $colorterciario;
 					color: #fff;
 				}
 			}

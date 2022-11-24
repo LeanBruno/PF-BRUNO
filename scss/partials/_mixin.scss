@@ -1,0 +1,17 @@
+@mixin flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+@mixin content{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+@mixin tamanos {
+	padding: 0;
+	margin: 0;
+}
+    

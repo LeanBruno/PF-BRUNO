@@ -1,11 +1,11 @@
-<h1 align="center"> ¡Bienvenido a mi proyecto de Desarrollo Web! 👩‍💻🚀 </h1>
+<h1 align="center"> ¡Bienvenido a mi proyecto de Desarrollo Web! 👨🚀</h1>
 
 _Conocimientos adquiridos y posteriormente aplicados:_
 
 ###### HTML
 
 - Estructura final de la web.
-- Maquetado con código prolijo y limpio.
+- Maquetado con código prolijo.
 - Manejo de etiquetas semánticas.
 
 ###### SCSS
@@ -13,17 +13,20 @@ _Conocimientos adquiridos y posteriormente aplicados:_
 - Estilo final de la web.
 - Todo el estilo se transformó a SCSS.
 - Se utilizó nesting y selector &.
-- Uso de variables, extend, imports, mixings, maps, etc.
+- Uso de variables, extend, imports, mixings, etc.
 
 ###### GITHUB
 
-- Manejo de ramas al incorporar SASS (se utilizó una rama distinta para ir versionando el proyecto con el uso de commits, para luego mergearlo a la rama main)
+- Manejo de ramas al incorporar SASS (se utilizó una rama secundaria para ir versionando el proyecto con el uso de commits, para luego mergearlo a la rama main)
 - Uso de .gitignore para evitar los archivos node\*modules.
 
 ###### RESPONSIVE
 
 - Uso de grids, flexbox y box-modeling.
-- Se utilizó la herramienta de Bootstrap 
+
+###### BOOTSTRAP
+
+- Se utilizó la herramienta de Bootstrap.
 
 ###### NODE MODULES
 

@@ -28,9 +28,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  display: flex;
   flex-direction: column;
   position: relative;
   isolation: isolate;
@@ -56,8 +56,8 @@
     color: white;
     text-align: center;
     font-family: "Lato", cursive;
-    font-size: 100%;
-    text-shadow: 1px 1px 0 #454444; }
+    font-size: 18px;
+    text-shadow: 1px 1px 0 #464343; }
 
 .imagenPrincipal2 {
   background-image: url("../img/aver2.jpg"); }
@@ -74,7 +74,7 @@
 .tarjetitas, .tarjetas {
   display: flex;
   gap: 30px;
-  padding: 60px; }
+  padding: 35px; }
   .tarjetitas .tarjetita, .tarjetas .tarjetita {
     flex-basis: 100%;
     display: flex;
@@ -123,8 +123,7 @@
 footer {
   width: 100%;
   padding: 20px 0;
-  background-color: #211d1d;
-  margin-top: 100px; }
+  background-color: #211d1d; }
 
 .socialContainer {
   display: flex;
@@ -218,7 +217,8 @@ ul {
 
 .contact-page-section {
   position: relative;
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 10px; }
   .contact-page-section .inner-container {
     position: relative;
     z-index: 1;
@@ -234,7 +234,7 @@ ul {
     position: relative; }
     .contact-page-section .info-column .inner-column {
       position: relative;
-      padding: 60px 35px; }
+      padding: 1rem; }
     .contact-page-section .info-column h2 {
       position: relative;
       color: #fff;
@@ -246,18 +246,17 @@ ul {
       position: relative;
       margin-bottom: 60px; }
       .contact-page-section .info-column .list-info li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
         position: relative;
         margin-bottom: 25px;
         font-size: 18px;
         color: #fff;
-        line-height: 1.8em;
-        padding-left: 45px; }
+        line-height: 1.8em; }
         .contact-page-section .info-column .list-info li:last-child {
           margin-bottom: 0; }
         .contact-page-section .info-column .list-info li i {
-          position: absolute;
-          left: 0;
-          top: 8px;
           color: #fff;
           font-size: 30px; }
 
@@ -500,11 +499,37 @@ ul {
   border-radius: 100px;
   font-size: 22px; }
 
+@media screen and (max-width: 1210px) {
+  .tarjetitas, .tarjetas, .tarjetas, .descripcion {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem; } }
+
+@media screen and (max-width: 1111px) {
+  .tarjetitas .tarjetita .titulo, .tarjetas .tarjetita .titulo, .tarjetas .tarjetita .titulo {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem; } }
+
+@media screen and (max-width: 1060px) {
+  .tarjetitas, .tarjetas, .tarjetas, .descripcion {
+    font-size: 0.7rem;
+    padding-bottom: 0.5rem; } }
+
+@media screen and (max-width: 985px) {
+  .tarjetitas, .tarjetas, .tarjetas, .descripcion {
+    font-size: 0.6rem;
+    padding-bottom: 0.1rem; } }
+
 @media screen and (max-width: 768px) {
   .imagenPortada {
     padding-inline: 50px; }
   .tarjetitas, .tarjetas {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .tarjetitas .tarjetita .titulo, .tarjetas .tarjetita .titulo, .tarjetas .tarjetita .titulo {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem; }
+  .tarjetitas, .tarjetas, .tarjetas, .descripcion {
+    font-size: 1rem;
+    padding-bottom: 0.5rem; } }
 
 @media screen and (max-width: 630px) {
   .mainContent, .textSection {
@@ -513,11 +538,21 @@ ul {
   .textSection {
     display: block;
     margin-left: 3%;
-    text-align: center; } }
+    text-align: center; }
+  .grid-2 {
+    display: flex;
+    flex-direction: column; }
+  .grid-2-orden1 {
+    order: -1; } }
 
 @media screen and (max-width: 500px) {
   .imagenPortada {
-    padding-inline: 0px; } }
+    padding-inline: 0px; }
+  .tarjetitas, .tarjetas, .tarjetas, .info {
+    padding: 1rem;
+    margin-top: 2rem; }
+  .info {
+    padding: 1rem; } }
 
 @media screen and (max-width: 375px) {
   .imagenPrincipal h2 {

@@ -1,12 +1,10 @@
 li {
 	list-style: none;
-	padding: 0;
-	margin: 0;
+	@include tamanos;
 }
 ul {
 	list-style: none;
-	padding: 0;
-	margin: 0;
+	@include tamanos;
 }
 .sec-title {
 	position: relative;
@@ -46,6 +44,7 @@ ul {
 .contact-page-section {
 	position: relative;
 	padding-top: 50px;
+	margin-bottom: 10px;
 	.inner-container {
 		position: relative;
 		z-index: 1;
@@ -64,7 +63,7 @@ ul {
 		position: relative;
 		.inner-column {
 			position: relative;
-			padding: 60px 35px;
+			padding: 1rem;
 		}
 		h2 {
 			position: relative;
@@ -78,19 +77,18 @@ ul {
 			position: relative;
 			margin-bottom: 60px;
 			li {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
 				position: relative;
 				margin-bottom: 25px;
 				font-size: 18px;
 				color: #fff;
 				line-height: 1.8em;
-				padding-left: 45px;
 				&:last-child {
 					margin-bottom: 0;
 				}
 				i {
-					position: absolute;
-					left: 0;
-					top: 8px;
 					color: #fff;
 					font-size: 30px;
 				}
