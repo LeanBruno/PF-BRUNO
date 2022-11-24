@@ -17,10 +17,7 @@
     text-decoration: none;
     font-family: "Bebas Neue", cursive; }
     .navbar .nav-item .nav-link:hover {
-      color: #efb810;
-      text-decoration: underline double; }
-  .navbar .nav-item .nav-link.active {
-    text-decoration: underline double; }
+      color: #efb810; }
 
 .imagenPortada {
   min-height: 90vh;
@@ -217,12 +214,12 @@ ul {
 .contact-page-section {
   position: relative;
   padding-top: 50px;
-  margin-bottom: 20px; }
+  margin-bottom: 50px; }
   .contact-page-section .inner-container {
     position: relative;
     z-index: 1;
     background-color: #212529;
-    box-shadow: 0 0 3px 3px #36393f; }
+    box-shadow: 0 0 3px 3px #676b72; }
   .contact-page-section .form-column {
     position: relative; }
     .contact-page-section .form-column .inner-column {

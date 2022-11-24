@@ -10,11 +10,7 @@
 			font-family: $FontBebas;
 			&:hover {
 				color: $colorprincipal;
-				text-decoration: underline double;
 			}
-		}
-		.nav-link.active {
-			text-decoration: underline double;
 		}
 	}
 }
